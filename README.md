@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+# The Wise - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte da landing page da **The Wise**, Uma empresa de Robotica Educaional, que visa integrar a metodologia STEAM (Ciência, Tecnologia, Engenharia, Artes e Matemática) no ensino da Robótica. O objetivo do site é divulgar o projeto, suas iniciativas, eventos e compartilhar os avanços realizadas, envolvendo estudantes e educadores em atividades práticas de aprendizado.
 
-Currently, two official plugins are available:
+## Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A **The Wise** oferece uma plataforma inovadora de aprendizado prático, utilizando a robótica para ensinar conceitos de física, matemática, engenharia e programação. Este site serve como fonte de informação sobre a empresa e seus serviços.
 
-## Expanding the ESLint configuration
+## Tecnologias Usadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este site foi desenvolvido utilizando as seguintes tecnologias:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **HTML5**: Estruturação do conteúdo e estrutura do site.
+- **CSS3**: Estilo e design responsivo, garantindo que o site funcione em todos os dispositivos.
+- **JavaScript (ES6+)**: Interatividade no site, incluindo animações e formulários dinâmicos.
+- **React.js**: Biblioteca JavaScript para construir interfaces de usuário dinâmicas e responsivas.
+- **React Router**: Gerenciamento de rotas para navegação entre páginas.
+- **Tailwind CSS**: Framework de CSS para desenvolvimento rápido de layouts responsivos e estilizados.
+- **Node.js**: Ambiente de execução JavaScript no backend (se necessário para APIs ou funcionalidades de servidor).
+- **Vite**: Ferramenta de build e empacotamento de front-end de alta performance, usada para acelerar o desenvolvimento e otimizar a construção do site.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Licença
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Criador
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Desenvolver web Gustavo Costa
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **E-mail**: gustavosncosta@gmail.com
+- **Portfolio**: [www.gustavocosta.me](https://www.gustavocosta.me/)
+- **LinkedIn**: [Gustavo Costa](https://www.linkedin.com/in/gustavosncosta)
+- **GitHub**: [OGustavoCosta](https://github.com/OGustavoCosta)
+
+---
+
+**The Wise** é um projeto que inspira jovens a explorarem novas possibilidades tecnológicas. Junte-se a nós na transformação do ensino através da inovação!
