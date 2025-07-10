@@ -1,22 +1,48 @@
+:root{
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+}
+
 *{
-    /* scroll-margin: 5rem; */
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-    scrollbar-width: auto;
+body{
+    padding: 0;
+    margin: 0;
 }
 
-body{
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1rem;
+.main__background,
+.header--navigation,
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    margin: 0;
-    padding: 0;
+.main__background > *,
+.header--navigation > *,
+.footer > *{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    max-width: 1280px;
+}
+
+@media (min-width: 1400px){
+    .main__background > *,
+    .header--navigation > *,
+    .footer > *{
+        padding-left: 0%;
+        padding-right: 0%;
+}
 }
 
 strong{
-    color: var(--color-highlight);
     font-weight: 500;
+}
+
+label{
+    display: grid;
 }

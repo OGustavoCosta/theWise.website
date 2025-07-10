@@ -1,21 +1,24 @@
 .button{
-    border: 2px solid var(--color-light);
-    text-transform: uppercase;
-    width: fit-content;
-
-    padding: 0.5rem;
+    display: inline-block;
+    border-radius: 8px;
 }
 
 .button--cta{
-    padding: 0.7rem 1.5rem;
-    border: 3px solid;
+    text-transform: uppercase;
+    background-color: var(--color-highlight-light);
+    color: var(--color-dark);
+    font-weight: 600;
+    box-shadow: 0 5px 0 var(--color-highlight-dark);
+
+    transition: 0.2s;
 }
 
-.button--tree{
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    gap: 10px;
+.button--cta:hover{
+    box-shadow: 0 4px 0 var(--color-highlight-dark);
+    transform: scale(1.03);
+}
 
-    padding: 15px;
+.button--cta:active{
+    box-shadow: 0 0px 0 var(--color-highlight-dark);
+    transform: scale(1.03) translateY(4px);
 }
