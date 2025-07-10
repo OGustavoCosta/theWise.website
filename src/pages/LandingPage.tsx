@@ -7,7 +7,7 @@ function LandingPage(){
             <Navigation type={'fixed'}/>
             <main className="main">
                 {/* Hero */}
-                <div id="inicio" className="main__background md:bg-[url(/public/images/background/pattern-3.png)] bg-right bg-no-repeat">
+                <div id="inicio" className="main__background md:bg-[url(/images/background/pattern-3.png)] bg-right bg-no-repeat">
                     <section className="section section--hero transition-all pb-15 flex flex-col-reverse md:grid md:grid-cols-2 md:items-end gap-10 h-dvh min-h-[650px] md:max-h-[700px]">
                         <article className="article grid gap-2">
                             <header className="article__header">
@@ -21,14 +21,14 @@ function LandingPage(){
                             </div>
                         </article>
                         <div className="flex justify-center">
-                            <img className="w-full max-w-xl md:hidden" src="public\images\background\hero-image-mobile.png" alt="uma menina e um manino segurando um robô cada" />
-                            <img className="w-full max-w-xl hidden md:block" src="public\images\background\hero-image-desktop.png" alt="uma menina e um manino segurando um robô cada" />
+                            <img className="w-full max-w-xl md:hidden" src="/images\background\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
+                            <img className="w-full max-w-xl hidden md:block" src="/images\background\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />
                         </div>
                     </section>
                 </div>
 
                 {/* Sobre */}
-                <div className="main__background bg-[url(/public\images\background\Braç2.png)] bg-left bg-no-repeat bg-cover inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-fixed">
+                <div className="main__background bg-[url(/images/background/Braç2.png)] bg-left bg-no-repeat bg-cover inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-fixed">
                     <section className="section flex justify-center md:justify-end pt-15 pb-20">
                         <article className="article grid gap-5 bg-light text-dark p-10 rounded-2xl max-w-lg neumorphism-dark">
                             <header className="article__header">
