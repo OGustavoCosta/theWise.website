@@ -33,6 +33,25 @@
     border-bottom: 1px solid var(--color-background-dark);
 }
 
+.neumorphism-dark{
+    border-radius: 16px;
+    box-shadow:  11px 11px 25px #d6d6d625,
+             -11px -11px 25px #ffffff25;
+}
+
+.neumorphism-light{
+    border-radius: 16px;
+    box-shadow:  8px 8px 16px #c2c2c2,
+             -8px -8px 16px #ffffff;
+}
+
+.neumorphism-inner{
+    border-radius: 16px;
+    background: #e0e0e0;
+    box-shadow: inset 24px 24px 46px #acacac,
+                inset -24px -24px 46px #ffffff;
+}
+
 /* Grid/Flex Utils */
 .grid-rows-default{
     grid-template-rows: auto 1fr auto;
