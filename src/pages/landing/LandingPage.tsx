@@ -1,5 +1,5 @@
 /* Icons */
-import { MoveRight } from "lucide-react"
+import { MapPin, MoveRight } from "lucide-react"
 
 /* Components */
 import CTAButton from "../../components/buttons/CTAButton"
@@ -9,6 +9,7 @@ import Navigation from "../../components/Navigation"
 import LandingCourses from "./LandingCourses"
 import LandingReview from "./LandingReview"
 import LandingEvent from "./LandingEvent"
+import LandingFaQ from "./LandingFaQ"
 
 function LandingPage(){
     return(
@@ -98,13 +99,33 @@ function LandingPage(){
 
                 {/* Eventos */}
                 <div className="main__background bg-background-light">
-                    <section className="section flex flex-col gap-5 pt-15 pb-20 relative">
+                    <section className="section flex flex-col gap-5 pt-15 pb-15 relative">
                         <header className="section__header text-background-dark">
                             <h2 className="section__title  text-4xl font-bold">Eventos</h2>
                             <MoveRight />
                         </header>
                         <LandingEvent/>
                     </section>
+                </div>
+
+                {/* Onde Estamos */}
+                <div className="main__background bg-gradient-to-r bg-background-dark">
+                    <section className="section flex justify-start flex-col md:flex-row-reverse gap-x-10 gap-y-5 py-10 relative rounded-r-4xl">
+                        <article className="article w-full flex items-center justify-center flex-col gap-1">
+                            <MapPin size={80} strokeWidth={2} />
+                            <h2 className="article__title  text-4xl font-bold flex items-center gap-3"> Onde Estamos</h2>
+                            <p className="article__text text-lg text-center">Av Ipiranga, 170, Bairro Ipiranga - Guanambi/BA</p>
+                            <a href="https://maps.app.goo.gl/JEFu6wFqNyHh516n9" className="border-2 py-2 px-6 md:inline-flex items-end gap-3 rounded-lg uppercase w-fit mt-5 hidden"> Acessar pelo Mapa </a>
+                        </article>
+                        <div className="section__banner section__banner--location bg-gray-100 w-[100%] aspect-16/9 overflow-hidden rounded-2xl">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.676898000313!2d-42.80253612531534!3d-14.213687386023087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75ac47dc00fca77%3A0x1b41afd6eda9cf5e!2sThe%20Wise!5e0!3m2!1spt-BR!2sbr!4v1752261990062!5m2!1spt-BR!2sbr" className="w-full h-full"  loading="lazy"></iframe>
+                        </div>
+                    </section>
+                </div>
+
+                {/* FaQ */}
+                <div className="main__background bg-background-light">
+                    <LandingFaQ/>
                 </div>
             </main>
         </div>
