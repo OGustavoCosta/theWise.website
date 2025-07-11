@@ -56,3 +56,8 @@
 .grid-rows-default{
     grid-template-rows: auto 1fr auto;
 }
+
+/* Slides (Swaper) */
+.swiper-linear .swiper-wrapper {
+  transition-timing-function: linear;
+}
