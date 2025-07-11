@@ -1,5 +1,3 @@
-import CourseButton from "../buttons/CourseButton"
-
 function ReviewCard(props: any){
     const { title, message, author, authorDescription } = props.review
 

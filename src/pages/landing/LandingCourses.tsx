@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -108,8 +108,8 @@ function LandingCourses(){
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-                {courses.map(({banner, title, shortDescription}) =>(
-                    <SwiperSlide className=''><CourseCard banner={banner} title={title} shortDescription={shortDescription}/></SwiperSlide>
+                {courses.map((course) =>(
+                    <SwiperSlide className=''><CourseCard course={course}/></SwiperSlide>
                 ))}
             </Swiper>
         </div>

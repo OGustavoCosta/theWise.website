@@ -1,5 +1,5 @@
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 

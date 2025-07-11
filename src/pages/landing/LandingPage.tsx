@@ -1,7 +1,11 @@
+/* Icons */
 import { MoveRight } from "lucide-react"
+
+/* Components */
 import CTAButton from "../../components/buttons/CTAButton"
-import CourseCard from "../../components/cards/CourseCard"
 import Navigation from "../../components/Navigation"
+
+/* Pages */
 import LandingCourses from "./LandingCourses"
 import LandingReview from "./LandingReview"
 

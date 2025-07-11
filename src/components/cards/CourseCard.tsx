@@ -1,7 +1,7 @@
 import CourseButton from "../buttons/CourseButton"
 
 function CourseCard(props: any){
-    const { banner, title, shortDescription } = props
+    const { banner, title, shortDescription } = props.course
 
     return(
         <article className="card card--course min-h-[420px] bg-background-light text-dark grid py-8 px-5 rounded-2xl gap-5 scale-[0.98] hover:scale-[1] transition-all cursor-default">
