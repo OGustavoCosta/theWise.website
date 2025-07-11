@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 /* Pages */
 import LandingCourses from "./LandingCourses"
 import LandingReview from "./LandingReview"
+import LandingEvent from "./LandingEvent"
 
 function LandingPage(){
     return(
@@ -15,7 +16,7 @@ function LandingPage(){
             <Navigation type={'fixed'}/>
             <main className="main w-full overflow-hidden">
                 {/* Hero */}
-                <div id="inicio" className="main__background md:bg-[url(/images/background/pattern-3.png)] bg-right bg-no-repeat">
+                <div id="inicio" className="main__background bg-[url(/images/background/pattern-purple.png)]">
                     <section className="section section--hero transition-all pb-15 flex flex-col-reverse md:grid md:grid-cols-2 md:items-end gap-10 h-dvh min-h-[650px] md:max-h-[700px]">
                         <article className="article grid gap-2">
                             <header className="article__header">
@@ -29,8 +30,8 @@ function LandingPage(){
                             </div>
                         </article>
                         <div className="flex justify-center">
-                            <img className="w-full max-w-xl md:hidden" src="/images\background\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
-                            <img className="w-full max-w-xl hidden md:block" src="/images\background\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />
+                            <img className="w-full max-w-xl md:hidden hover:scale-[1.01] transition-all duration-500" src="/images\background\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
+                            <img className="w-full max-w-xl hidden md:block hover:scale-[1.01] transition-all duration-500" src="/images\background\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />
                         </div>
                     </section>
                 </div>
@@ -38,7 +39,7 @@ function LandingPage(){
                 {/* Sobre */}
                 <div className="main__background bg-[url(/images/background/Braç2.png)] bg-left bg-no-repeat bg-cover inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-fixed">
                     <section className="section flex justify-center md:justify-end pt-15 pb-20">
-                        <article className="article grid gap-5 bg-light text-dark p-10 rounded-2xl max-w-lg neumorphism-dark">
+                        <article className="article grid gap-5 bg-light text-dark p-10 rounded-2xl max-w-lg neumorphism-dark transition-all scale-[0.99] hover:scale-[1] duration-500">
                             <header className="article__header">
                                 <h2 className="article__title text-background-dark text-3xl font-bold">A The Wise prepara o seu filho pro futuro</h2>
                             </header>
@@ -52,10 +53,13 @@ function LandingPage(){
                 </div>
 
                 {/* Metodologia */}
-                <div className="main__background bg-background-light">
-                    <section className="section flex justify-center md:justify-start pt-15 lg:pt-50 pb-20 relative">
-                        <img className="section__banner absolute bg-gray-400 w-[80%] h-[70%] z-1 top-15 right-0 overflow-hidden rounded-4xl hidden lg:block object-cover" src="\images\banners\chieald-and-robot.jpg" alt="um menino segurando um robô" />
-                        <article className="article grid gap-5 bg-light text-dark p-10 rounded-2xl max-w-lg neumorphism-light z-2">
+                <div className="main__background bg-background-light max-lg:bg-[url(/images/background/pattern-white.png)]">
+                    <section className="section flex justify-center md:justify-start pt-15 lg:pt-50 pb-20 relative ">
+                        <div className="section__banner absolute bg-gray-400 w-[80%] h-[70%] z-1 top-15 right-0 overflow-hidden rounded-4xl hidden lg:block">
+                            <img className="section__image w-full h-full object-cover hover:scale-[1.01] transition-all duration-1000 " src="\images\banners\chieald-and-robot.jpg" alt="um menino segurando um robô" />
+                        </div>
+                        
+                        <article className="article grid gap-5 bg-light text-dark p-10 rounded-2xl max-w-lg neumorphism-light z-2 scale-[0.99] hover:scale-[1] duration-500">
                             <header className="article__header">
                                 <h2 className="article__title text-background-dark text-3xl font-bold">Transformamos aprendizado em diversão</h2>
                             </header>
@@ -67,11 +71,11 @@ function LandingPage(){
                         </article>
                     </section>
                 </div>
-
                 
+                {/* Cursos e Depoimentos */}
                 <div className="main__background inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-gray-200 w-full grid gap-10">
                     {/* Cursos*/}
-                    <section className="section flex flex-col items-center justify-center pt-15 gap-10">
+                    <section className="section flex flex-col items-center justify-center pt-15 gap-5">
                         <header className="section__header grid justify-items-center text-background-dark">
                             <h2 className="section__title  text-4xl text-center font-bold">Cursos Ministrados</h2>
                             <MoveRight />
@@ -89,6 +93,17 @@ function LandingPage(){
                         <div className="section__button flex justify-center md:pt-10">
                             <CTAButton/>
                         </div>
+                    </section>
+                </div>
+
+                {/* Eventos */}
+                <div className="main__background bg-background-light">
+                    <section className="section flex flex-col gap-5 pt-15 pb-20 relative">
+                        <header className="section__header text-background-dark">
+                            <h2 className="section__title  text-4xl font-bold">Eventos</h2>
+                            <MoveRight />
+                        </header>
+                        <LandingEvent/>
                     </section>
                 </div>
             </main>

@@ -14,7 +14,7 @@ function Navigation(props: any){
     return(
         <header className={`header header--navigation ${'fixed' == type ? 'absolute' : ''} `}>
             <nav className={`nav w-full flex justify-between py-10`}>
-                <img className="w-[15%] min-w-20 aspect-square" src="images\logo\yellow-logo.png" alt="logo-The-Wise" />
+                <img className="w-[15%] min-w-20 aspect-square hover:scale-[1.02] transition-all duration-500" src="images\logo\yellow-logo.png" alt="logo-The-Wise"/>
                 <ul className="nav__list hidden gap-5 lg:flex items-center h-fit">
                     <li className="nav__item"><a href="#inicio" className="nav__link">Início</a></li>
                     <li className="nav__item"><a href="#sobre" className="nav__link">Sobre</a></li>

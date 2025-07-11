@@ -1,0 +1,6 @@
+/* Event Card */
+
+/* Zoom na imagem  */
+.card--event:hover > .card__banner{
+    scale: 1.02;
+}

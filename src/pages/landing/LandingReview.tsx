@@ -125,22 +125,6 @@ function LandingReview(){
                 modules={[Autoplay]}
                 slidesPerView={'auto'}
                 spaceBetween={10}
-
-                /* breakpoints={{
-                    650: { 
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-
-                    },   // sm
-                    1000: {
-                        slidesPerView: 3,
-                        spaceBetween:20,
-                    },  // lg
-                    1325: { 
-                        slidesPerView: 3,
-                        spaceBetween:20,
-                    },  // xl
-                }} */
                 loop={true}
                 speed={8000}
                 autoplay={{
