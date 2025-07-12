@@ -15,7 +15,7 @@ import Footer from "../../components/Footer"
 function LandingPage(){
     return(
         <div className="w-full min-h-[100lvh] font-mavenPro text-base text-light bg-background-dark">
-            <Navigation type={'fixed'}/>
+            <Navigation type={''}/>
             <main className="main w-full overflow-hidden">
                 {/* Hero */}
                 <div id="inicio" className="main__background bg-[url(/images/background/pattern-purple.png)]">

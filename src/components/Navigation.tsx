@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react"
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function Navigation(props: any){
     const { type } = props
@@ -11,11 +11,22 @@ function Navigation(props: any){
         }
     }
 
+    /* Scroll */
+    const [scrollNav, setScrollNav] = useState(window.scrollY > 1)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollNav(window.scrollY > 1)
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [])
+
     return(
-        <header className={`header header--navigation ${'fixed' == type ? 'absolute' : ''} `}>
-            <nav className={`nav w-full flex justify-between py-10`}>
-                <img className="w-[15%] min-w-20 aspect-square hover:scale-[1.02] transition-all duration-500" src="images\logo\yellow-logo.png" alt="logo-The-Wise"/>
-                <ul className="nav__list hidden gap-5 lg:flex items-center h-fit">
+        <header className={`header header--navigation ${'fixed' == type ? 'absolute' : 'fixed'} before:bg-white before:w-full before:absolute before:top-0 before:left-0 h-0 before:transition-all before:duration-200  z-10 ${false == scrollNav ? '' : 'is-active fixed before:h-[4.5rem]'}`}>
+            <nav className={`nav w-full flex justify-between transition-all duration-200  ${false == scrollNav ? 'py-10' : 'py-2.5 text-dark'}`}>
+                <img className={`aspect-square transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src="images\logo\yellow-logo.png" alt="logo-The-Wise"/>
+                <ul className={`nav__list hidden gap-5 lg:flex items-center h-fit ${false == scrollNav ? '' : 'translate-y-[50%]'} transition-all duration-200`}>
                     <li className="nav__item"><a href="#inicio" className="nav__link underline-animation">Início</a></li>
                     <li className="nav__item"><a href="#sobre" className="nav__link underline-animation">Sobre</a></li>
                     <li className="nav__item"><a href="#metodologia" className="nav__link underline-animation">Metodologia</a></li>
@@ -26,7 +37,7 @@ function Navigation(props: any){
                     <li className="nav__item"><a href="#faq" className="nav__link underline-animation">FaQ</a></li>
                     <li className="nav__item "><a href="#" className="nav__link text-highlight-light py-2 px-4 border-[1px] border-highlight-light rounded-sm fill-animation-left-to-right before:bg-highlight-light hover:text-light hover:shadow-[0_0_20px]/100 shadow-highlight-light transition-all duration-500"><span className="z-2 relative">Entrar</span></a></li>
                 </ul>
-                <div className="nav__mobile-icon inline-block lg:hidden cursor-pointer" onClick={ToggleNavigation}>
+                <div className={`nav__mobile-icon inline-block lg:hidden cursor-pointer ${false == scrollNav ? '' : 'translate-y-[25%]'}`} onClick={ToggleNavigation}>
                     <Menu size={25} strokeWidth={2} />
                 </div>
 
