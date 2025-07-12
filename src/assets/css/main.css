@@ -62,3 +62,67 @@
 .swiper-linear .swiper-wrapper {
   transition-timing-function: linear;
 }
+
+/* ANIMATIONS */
+
+/* Animação de Linha (hover) */
+.underline-animation{
+    position: relative;
+
+    transition: all;
+    transition-duration: 0.5s;
+    padding-bottom: 2px;
+}
+
+.underline-animation::before{
+    content: '';
+    background-color: #fff;
+    width: 0%;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.underline-animation:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+/* Animação de preenchimento (left to right) */
+
+.fill-animation-left-to-right{
+    position: relative;
+}
+
+.fill-animation-left-to-right::before{
+    content: '';
+    z-index: 0;
+    width: 0%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.fill-animation-left-to-right:hover::before{
+    width: 100%;
+}
+
+.fill-icon-animation{
+    transform: translateX(-10%);
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.fill-animation-left-to-right:hover .fill-icon-animation{
+    transform: translateX(5%);
+}

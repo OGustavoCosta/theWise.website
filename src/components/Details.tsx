@@ -7,7 +7,7 @@ function Details(props: any){
     return(
         <details className="details border-background-light bg-gray-200">
             <summary className="datails__header cursor-pointer text-background-dark bg-light">
-                <h3 className="details__title text-lg">{title}</h3>
+                <h3 className="details__title md:text-lg">{title}</h3>
                 <div className="details__icon transition-transform">
                     <ChevronRight/>
                 </div>
