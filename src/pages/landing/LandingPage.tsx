@@ -75,9 +75,9 @@ function LandingPage(){
                 </div>
                 
                 {/* Cursos e Depoimentos */}
-                <div className="main__background inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-gray-200 w-full grid gap-10">
+                <div id="cursos" className="main__background inset-shadow-[0px_0px_50px]/30 inset-shadow-black bg-gray-200 w-full grid gap-10">
                     {/* Cursos*/}
-                    <section id="cursos" className="section flex flex-col items-center justify-center pt-15 gap-5">
+                    <section className="section flex flex-col items-center justify-center pt-15 gap-5">
                         <header className="section__header grid justify-items-center text-background-dark">
                             <h2 className="section__title  text-4xl text-center font-bold">Cursos Ministrados</h2>
                             <MoveRight />
@@ -87,7 +87,7 @@ function LandingPage(){
                     </section>
 
                     {/* Depoimentos */}
-                    <section id="depoimentos" className="section flex flex-col md:justify-end pb-15 gap-5">
+                    <section id="depoimentos" className="section scroll-my-24 flex flex-col md:justify-end pb-15 gap-5">
                         <header className="section__header">
                             <h2 className="section__title text-background-dark text-xl font-semibold">O que os pais tem a dizer sobre nós?</h2>
                         </header>
@@ -99,8 +99,8 @@ function LandingPage(){
                 </div>
 
                 {/* Eventos */}
-                <div className="main__background bg-background-light">
-                    <section id="eventos" className="section flex flex-col gap-5 pt-15 pb-15 relative">
+                <div id="eventos" className="main__background bg-background-light">
+                    <section className="section flex flex-col gap-5 pt-15 pb-15 relative">
                         <header className="section__header text-background-dark">
                             <h2 className="section__title  text-4xl font-bold">Eventos</h2>
                             <MoveRight />
@@ -110,8 +110,8 @@ function LandingPage(){
                 </div>
 
                 {/* Onde Estamos */}
-                <div className="main__background bg-gradient-to-r bg-background-dark">
-                    <section id="localizacao" className="section flex justify-start flex-col md:flex-row-reverse gap-x-10 gap-y-5 py-10 relative rounded-r-4xl">
+                <div id="localizacao" className="main__background bg-gradient-to-r bg-background-dark">
+                    <section className="section flex justify-start flex-col md:flex-row-reverse gap-x-10 gap-y-5 py-10 relative rounded-r-4xl">
                         <article className="article w-full flex items-center justify-center flex-col gap-1">
                             <MapPin size={80} strokeWidth={2} />
                             <h2 className="article__title  text-4xl font-bold flex items-center gap-3"> Onde Estamos</h2>
@@ -125,7 +125,7 @@ function LandingPage(){
                 </div>
 
                 {/* FaQ */}
-                <div className="main__background bg-background-light">
+                <div id="faq" className="main__background bg-background-light">
                     <LandingFaQ/>
                 </div>
             </main>

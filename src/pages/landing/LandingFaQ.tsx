@@ -31,7 +31,7 @@ function LandingFaQ(){
 
 
     return(
-        <section id="faq" className="section pt-10 pb-15 w-full grid gap-5">
+        <section className="section pt-10 pb-15 w-full grid gap-5">
             <header className="section__header text-background-dark">
                 <h2 className="section__title  text-4xl font-bold">Perguntas Frequentes</h2>
             </header>
