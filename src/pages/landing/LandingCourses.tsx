@@ -101,6 +101,10 @@ function LandingCourses(){
                 className=''
                 modules={[Autoplay]}
                 breakpoints={{
+                    0: { 
+                        spaceBetween: 20,
+
+                    },
                     650: { 
                         slidesPerView: 2,
                         spaceBetween: 10,
@@ -137,6 +141,7 @@ function LandingCourses(){
                 <Modal
                     close={() => setModal(false)}
                     course={courses.find((course: ICourse) => course.id === cardId)!}
+                    isActive={modal}
                 />
             )}
             

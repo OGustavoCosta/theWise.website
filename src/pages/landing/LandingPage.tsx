@@ -25,7 +25,7 @@ function LandingPage(){
                                 <h2 className="article__title text-4xl xmd:text-5xl text-highlight-light font-black">Explore, <br/> Crie e Inove</h2>
                             </header>
                             <div className="article__content max-w-sm">
-                                <p className="m--article__text">Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
+                                <p className="m--article__text text-sm md:text-base">Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
                             </div>
                             <div className="article__button mt-2.5">
                                 <CTAButton/>
@@ -56,7 +56,7 @@ function LandingPage(){
 
                 {/* Metodologia */}
                 <div id="metodologia" className="main__background bg-background-light max-lg:bg-[url(/images/background/pattern-white.png)]">
-                    <section className="section flex justify-center md:justify-start pt-15 lg:pt-50 pb-20 relative ">
+                    <section className="section flex justify-center lg:justify-start pt-15 lg:pt-50 pb-20 relative ">
                         <div className="section__banner absolute bg-gray-400 w-[80%] h-[70%] z-1 top-15 right-0 overflow-hidden rounded-4xl hidden lg:block">
                             <img className="section__image w-full h-full object-cover hover:scale-[1.01] transition-all duration-1000 " src="\images\banners\chieald-and-robot.jpg" alt="um menino segurando um robô" />
                         </div>
@@ -116,7 +116,7 @@ function LandingPage(){
                             <MapPin size={80} strokeWidth={2} />
                             <h2 className="article__title  text-4xl font-bold flex items-center gap-3"> Onde Estamos</h2>
                             <p className="article__text md:text-lg text-center">Av Ipiranga, 170, Bairro Ipiranga - Guanambi/BA</p>
-                            <a href="https://maps.app.goo.gl/JEFu6wFqNyHh516n9" className="border-2 py-2 px-6 md:inline-flex items-end gap-3 rounded-lg uppercase w-fit mt-5 hidden"> Acessar pelo Mapa </a>
+                            <a target="blank" href="https://maps.app.goo.gl/JEFu6wFqNyHh516n9" className="border-2 py-2 px-6 md:inline-flex items-end gap-3 rounded-lg uppercase w-fit mt-5 hidden fill-animation-left-to-right before:bg-light border-light overflow-hidden hover:text-dark"> <span className="z-2">Acessar pelo Mapa</span> </a>
                         </article>
                         <div className="section__banner section__banner--location bg-gray-100 w-[100%] aspect-16/9 overflow-hidden rounded-2xl">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.676898000313!2d-42.80253612531534!3d-14.213687386023087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75ac47dc00fca77%3A0x1b41afd6eda9cf5e!2sThe%20Wise!5e0!3m2!1spt-BR!2sbr!4v1752261990062!5m2!1spt-BR!2sbr" className="w-full h-full"  loading="lazy"></iframe>
