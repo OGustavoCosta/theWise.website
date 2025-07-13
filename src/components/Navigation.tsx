@@ -25,7 +25,7 @@ function Navigation(props: any){
     return(
         <header className={`header header--navigation ${'fixed' == type ? 'absolute' : 'fixed'} before:bg-white before:w-full before:absolute before:top-0 before:left-0 h-0 before:transition-all before:duration-200 before:border-gray-300 z-3 ${false == scrollNav ? '' : 'fixed before:h-[4.5rem] before:border-[1px]'}`}>
 
-            <nav className={`nav w-full flex justify-between transition-all duration-200  ${false == scrollNav ? 'py-10' : 'py-2.5 text-dark'}`}>
+            <nav className={`nav w-full flex justify-between transition-all duration-200  ${false == scrollNav ? 'py-5 md:py-10' : 'py-2.5 text-dark'}`}>
                 <img className={`aspect-square transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src="images\logo\yellow-logo.png" alt="logo-The-Wise"/>
                 <ul className={`nav__list hidden gap-5 lg:flex items-center h-fit ${false == scrollNav ? '' : 'translate-y-[50%]'} transition-all duration-200`}>
                     <li className="nav__item"><a href="#inicio" className={`nav__link underline-animation ${false == scrollNav ? 'before:bg-light' : 'before:bg-dark'}`}>Início</a></li>
@@ -43,7 +43,7 @@ function Navigation(props: any){
                 </div>
 
                 {/* Mobile */}
-                <div ref={navRef} className={`nav__mobile fixed top-0 left-0 w-full px-[5%] pb-10 ${false == scrollNav ? 'pt-10' : 'pt-6'} h-auto z-10 bg-background-light text-dark flex-col gap-6 transition-all duration-500 -translate-y-[100vh] flex lg:hidden`}>
+                <div ref={navRef} className={`nav__mobile fixed top-0 left-0 w-full px-[5%] pb-10 ${false == scrollNav ? 'pt-5' : 'pt-6'} h-auto z-10 bg-background-light text-dark flex-col gap-6 transition-all duration-500 -translate-y-[100vh] flex lg:hidden`}>
                     <div className="nav__mobile-icon inline-flex cursor-pointer w-full justify-end">
                         <X size={25} strokeWidth={2} onClick={ToggleNavigation}/>
                     </div>

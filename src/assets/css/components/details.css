@@ -19,6 +19,14 @@
     block-size: auto;
 }
 
-.details > summary::-webkit-details-marker {
-    display: none;
+summary {
+  list-style: none;        /* Firefox, Edge (baseado em Chromium), navegadores modernos */
+}
+
+summary::marker {
+  content: none;           /* Versão padrão/atual moderna para suportar ::marker */
+}
+
+summary::-webkit-details-marker {
+  display: none;           /* Compatibilidade com versões mais antigas do Chrome, Safari e iOS */
 }

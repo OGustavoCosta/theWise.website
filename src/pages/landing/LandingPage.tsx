@@ -19,21 +19,21 @@ function LandingPage(){
             <main className="main w-full overflow-hidden">
                 {/* Hero */}
                 <div id="inicio" className="main__background bg-[url(/images/background/pattern-purple.png)]">
-                    <section className="section section--hero transition-all pb-15 flex flex-col-reverse md:grid md:grid-cols-2 md:items-end gap-10 h-dvh min-h-[650px] md:max-h-[700px]">
-                        <article className="article grid gap-2">
+                    <section className="section section--hero transition-all pb-15 pt-25 flex flex-col-reverse md:grid md:grid-cols-[auto_1fr] md:items-end gap-x-0 gap-y-5 h-dvh min-h-[650px] md:max-h-[700px]">
+                        <article className="article grid gap-2 max-w-sm">
                             <header className="article__header">
                                 <h2 className="article__title text-4xl xmd:text-5xl text-highlight-light font-black">Explore, <br/> Crie e Inove</h2>
                             </header>
-                            <div className="article__content max-w-sm">
+                            <div className="article__content">
                                 <p className="m--article__text text-sm md:text-base">Da brincadeira ao aprendizado, a The Wise ensina robótica, tecnologia e inovação para crianças, adolescentes e jovens.</p>
                             </div>
                             <div className="article__button mt-2.5">
                                 <CTAButton/>
                             </div>
                         </article>
-                        <div className="flex justify-center">
-                            <img className="w-full max-w-xl md:hidden hover:scale-[1.01] transition-all duration-500" src="/images\background\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
-                            <img className="w-full max-w-xl hidden md:block hover:scale-[1.01] transition-all duration-500" src="/images\background\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />
+                        <div className="flex justify-center w-full h-full overflow-hidden">
+                            <img className="w-full h-full object-contain md:hidden hover:scale-[1.01] transition-all duration-500" src="/images\banners\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
+                            <img className="w-full h-full object-contain hidden md:block" src="/images\banners\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />   
                         </div>
                     </section>
                 </div>
