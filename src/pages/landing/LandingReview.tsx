@@ -134,7 +134,6 @@ function LandingReview(){
                 }}
                 grabCursor={true}
                 onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {reviews.map((review) =>(
                     <SwiperSlide className='max-w-xl'><ReviewCard review={review}/></SwiperSlide>

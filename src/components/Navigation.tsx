@@ -23,7 +23,7 @@ function Navigation(props: any){
     }, [])
 
     return(
-        <header className={`header header--navigation ${'fixed' == type ? 'absolute' : 'fixed'} before:bg-white before:w-full before:absolute before:top-0 before:left-0 h-0 before:transition-all before:duration-200 before:border-gray-300 z-10 ${false == scrollNav ? '' : 'is-active fixed before:h-[4.5rem] before:border-[1px]'}`}>
+        <header className={`header header--navigation ${'fixed' == type ? 'absolute' : 'fixed'} before:bg-white before:w-full before:absolute before:top-0 before:left-0 h-0 before:transition-all before:duration-200 before:border-gray-300 z-3 ${false == scrollNav ? '' : 'is-active fixed before:h-[4.5rem] before:border-[1px]'}`}>
             <nav className={`nav w-full flex justify-between transition-all duration-200  ${false == scrollNav ? 'py-10' : 'py-2.5 text-dark'}`}>
                 <img className={`aspect-square transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src="images\logo\yellow-logo.png" alt="logo-The-Wise"/>
                 <ul className={`nav__list hidden gap-5 lg:flex items-center h-fit ${false == scrollNav ? '' : 'translate-y-[50%]'} transition-all duration-200`}>
