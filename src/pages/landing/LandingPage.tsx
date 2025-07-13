@@ -11,7 +11,6 @@ import LandingReview from "./LandingReview"
 import LandingEvent from "./LandingEvent"
 import LandingFaQ from "./LandingFaQ"
 import Footer from "../../components/Footer"
-import Modal from "../../components/Modal"
 
 function LandingPage(){
     return(

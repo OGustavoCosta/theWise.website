@@ -19,7 +19,7 @@ interface ICourse {
 }
 
 function LandingCourses(){
-    const [courses, setCourses] = useState([
+    const [courses] = useState([
         {
             id: 1,
             banner: '/icons/courses/acompanhamento-pedagogico.svg',

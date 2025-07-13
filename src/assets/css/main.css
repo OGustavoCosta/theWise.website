@@ -9,6 +9,7 @@
 /* Importando Base */
 @import "./base/base.css";
 @import "./base/typografy.css";
+@import "./base/animation.css";
 
 /* Importando State */
 @import "./state/is-active.css";
@@ -120,8 +121,4 @@
     transform: translateX(-10%);
     transition: all;
     transition-duration: 0.5s;
-}
-
-.fill-animation-left-to-right:hover .fill-icon-animation{
-    transform: translateX(5%);
 }

@@ -1,5 +1,5 @@
 import { SquareArrowOutUpRight } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 interface Course {
     id: number,
@@ -16,7 +16,6 @@ interface CourseCardProps{
 
 function CourseCard({ course, getId, openModal }: CourseCardProps){
     const {id, banner, title, shortDescription} = course
-    const [modal, setModal] = useState(false)
 
     useEffect(() => {
         getId(id)

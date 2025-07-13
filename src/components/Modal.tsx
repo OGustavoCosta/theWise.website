@@ -1,7 +1,6 @@
 /* Components */
 import { X } from "lucide-react"
 import CTAButton from "./buttons/CTAButton"
-import { useEffect, useState } from "react"
 
 interface ICourse{
     banner: string,
@@ -21,7 +20,7 @@ function Modal({close, course}: IProps){
 
     return(
         <div onClick={close} className="modal__background fixed top-0 left-0 w-full h-full px-[10vw] py-10 bg-[#00000090] flex justify-center items-center z-10">
-            <section onClick={e => e.stopPropagation()} className="modal w-full max-w-lg h-full bg-light border-4 border-light text-dark rounded-2xl relative grid overflow-hidden xmd:py-3 py-3">
+            <section onClick={e => e.stopPropagation()} className="modal w-full max-w-lg h-full max-h-[450px] md:max-h-[600px] bg-light border-4 border-light text-dark rounded-2xl relative grid overflow-hidden xmd:py-3 py-3">
                 <div className="modal__tracker overflow-auto xmd:px-10 px-5 xmd:py-7 py-5 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 grid gap-10 grid-rows-[auto_1fr_auto]">
                     <X onClick={close} className="text-gray-400 absolute top-2 right-3 cursor-pointer"/>
                     <header className="modal__header flex items-center  gap-5">
