@@ -19,7 +19,7 @@ function LandingPage(){
             <main className="main w-full overflow-hidden">
                 {/* Hero */}
                 <div id="inicio" className="main__background bg-[url(/images/background/pattern-purple.png)]">
-                    <section className="section section--hero transition-all pb-15 pt-25 flex flex-col-reverse md:grid md:grid-cols-[auto_1fr] md:items-end gap-x-0 gap-y-5 h-dvh min-h-[650px] md:max-h-[700px]">
+                    <section className="section section--hero transition-all pb-15 pt-25 flex flex-col-reverse md:grid md:grid-cols-[auto_1fr] md:items-end gap-x-0 gap-y-5 h-dvh min-h-[650px] max-h-[700px] xmd:max-h-[900px] md:max-h-[700px] xl:max-h-[950px]">
                         <article className="article grid gap-2 max-w-sm">
                             <header className="article__header">
                                 <h2 className="article__title text-4xl xmd:text-5xl text-highlight-light font-black">Explore, <br/> Crie e Inove</h2>

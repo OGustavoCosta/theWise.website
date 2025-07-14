@@ -49,7 +49,7 @@ function Navigation({type}: INavigationProps){
                 </div>
 
                 {/* Mobile */}
-                <div ref={navRef} className={`nav__mobile fixed top-0 left-0 w-full px-[5%] pb-10 ${false == scrollNav ? 'pt-5' : 'pt-6'} h-auto z-10 bg-background-light text-dark flex-col gap-6 transition-all duration-500 -translate-y-[100vh] flex lg:hidden`}>
+                <div ref={navRef} className={`nav__mobile fixed top-0 left-0 w-full px-[5%] pb-10 ${false == scrollNav ? 'pt-5' : 'pt-6'} h-auto max-h-full z-10 bg-background-light text-dark flex-col gap-6 transition-all duration-500 -translate-y-[100vh]  flex lg:hidden overflow-auto`}>
                     <div className="nav__mobile-icon inline-flex cursor-pointer w-full justify-end">
                         <X size={25} strokeWidth={2} onClick={ToggleNavigation}/>
                     </div>
