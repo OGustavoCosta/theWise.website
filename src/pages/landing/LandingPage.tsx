@@ -33,7 +33,7 @@ function LandingPage(){
                         </article>
                         <div className="flex justify-center w-full h-full overflow-hidden">
                             <img className="w-full h-full object-contain md:hidden hover:scale-[1.01] transition-all duration-500" src="/images\banners\hero-image-mobile.png" alt="uma menina e um menino segurando um robô cada" />
-                            <img className="w-full h-full object-contain hidden md:block" src="/images\banners\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" />   
+                            <img className="w-full h-full object-contain hidden md:block" src="/images\banners\hero-image-desktop.png" alt="uma menina e um menino segurando um robô cada" loading="eager"/>   
                         </div>
                     </section>
                 </div>

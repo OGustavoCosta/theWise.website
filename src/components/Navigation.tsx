@@ -30,7 +30,8 @@ function Navigation({type}: INavigationProps){
 
             <nav className={`nav w-full flex justify-between transition-all duration-200  ${false == scrollNav ? 'py-5 md:py-10' : 'py-2.5 text-dark'}`}>
 
-                <img className={`aspect-square transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src={`${scrollNav ? 'images/logo/yellow-logo-small.png' : 'images/logo/yellow-logo.png'}`} alt="logo-The-Wise"/>
+                <img className={`hidden xmd:block aspect-square transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src={`${scrollNav ? 'images/logo/yellow-logo-small.png' : 'images/logo/yellow-logo.png'}`} alt="logo-The-Wise"/>
+                <img className={`aspect-square xmd:hidden transition-all duration-500 z-1 ${false == scrollNav ? 'w-[15%] hover:scale-[1.02] min-w-20' : 'w-13'}`} src={`images/logo/yellow-logo-small.png`} alt="logo-The-Wise"/>
                 
                 <ul className={`nav__list hidden gap-5 lg:flex items-center h-fit ${false == scrollNav ? '' : 'translate-y-[50%]'} transition-all duration-200`}>
                     <li className="nav__item"><a href="#inicio" className={`nav__link underline-animation ${false == scrollNav ? 'before:bg-light' : 'before:bg-dark'}`}>Início</a></li>
