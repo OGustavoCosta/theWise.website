@@ -6,16 +6,16 @@ interface ICourse{
     banner: string,
     title: string,
     shortDescription: string,
-    description: any,
+    description: string[],
 }
 
-interface IProps{
-    close: any,
+interface IModalProps{
+    close: () => void,
     course: ICourse,
     isActive: boolean,
 }
 
-function Modal({close, course, isActive}: IProps){
+function Modal({close, course, isActive}: IModalProps){
     const {banner, title, shortDescription, description} = course
     console.log(`Descrição: ${description}`)
 

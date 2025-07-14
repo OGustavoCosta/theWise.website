@@ -1,8 +1,11 @@
 import { Menu, X } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-function Navigation(props: any){
-    const { type } = props
+interface INavigationProps{
+    type: 'fixed' | '',
+}
+
+function Navigation({type}: INavigationProps){
     const navRef = useRef<HTMLDivElement>(null)
     
     const ToggleNavigation = () => {

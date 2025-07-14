@@ -1,5 +1,12 @@
-function EventCard(props: any){
-    const { banner, title, shortDescription } = props.event
+interface IEvent{
+    id: number,
+    banner: string,
+    title: string,
+    shortDescription: string
+}
+
+function EventCard({event}: {event: IEvent}){
+    const { banner, title, shortDescription } = event
 
     return(
         /* CSS externo para melhorias /assets/css/components/card.css */

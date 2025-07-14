@@ -1,5 +1,13 @@
-function ReviewCard(props: any){
-    const { title, message, author, authorDescription } = props.review
+interface IReview{
+    id: number,
+    title: string,
+    message: string
+    author: string,
+    authorDescription: string,
+}
+
+function ReviewCard({review}: {review:IReview}){
+    const { title, message, author, authorDescription } = review
 
     return(
         <article className="card card--review min-h-[200px] bg-background-light text-dark grid p-5 px-10 rounded-2xl gap-2.5 scale-[0.98] hover:scale-[1] transition-all cursor-default">

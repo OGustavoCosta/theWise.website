@@ -1,8 +1,14 @@
 /* Icons */
 import { ChevronRight } from "lucide-react"
 
-function Details(props: any){
-    const { title, text } = props.question
+interface IQuestion{
+    id: number,
+    title: string, 
+    text: string,
+}
+
+function Details({question}: {question: IQuestion}){
+    const { title, text } = question
 
     return(
         <details className="details border-background-light bg-gray-200 w-full border-[2px] rounded-xl">

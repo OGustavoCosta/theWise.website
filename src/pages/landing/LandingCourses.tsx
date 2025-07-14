@@ -15,11 +15,11 @@ interface ICourse {
     banner: string,
     title: string,
     shortDescription: string,
-    description: any,
+    description: string[],
 }
 
 function LandingCourses(){
-    const [courses] = useState([
+    const [courses] = useState<ICourse[]>([
         {
             id: 1,
             banner: '/icons/courses/acompanhamento-pedagogico.svg',
@@ -130,7 +130,7 @@ function LandingCourses(){
                 }}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                {courses.map((course: ICourse) =>(
+                {courses.map((course) =>(
                     <SwiperSlide key={course.id} className=''>
                         <CourseCard course={course} openModal={() => setModal(true)} getId={getId}/>
                     </SwiperSlide>
@@ -140,7 +140,7 @@ function LandingCourses(){
             {modal && cardId && (
                 <Modal
                     close={() => setModal(false)}
-                    course={courses.find((course: ICourse) => course.id === cardId)!}
+                    course={courses.find((course) => course.id === cardId)!}
                     isActive={modal}
                 />
             )}

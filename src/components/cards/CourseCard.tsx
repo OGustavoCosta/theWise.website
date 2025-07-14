@@ -10,8 +10,8 @@ interface Course {
 
 interface CourseCardProps{
     course: Course,
-    openModal: any,
-    getId: any,
+    openModal: () => void,
+    getId: (id: number) => void,
 }
 
 function CourseCard({ course, getId, openModal }: CourseCardProps){
@@ -19,7 +19,7 @@ function CourseCard({ course, getId, openModal }: CourseCardProps){
 
     useEffect(() => {
         getId(id)
-    }, [openModal])
+    }, [openModal, getId, id])
 
     return(
         <article className="card card--course min-h-[420px] bg-background-light text-dark grid py-8 px-5 rounded-2xl gap-5 scale-[0.98] hover:scale-[1] transition-all cursor-default">
@@ -28,7 +28,7 @@ function CourseCard({ course, getId, openModal }: CourseCardProps){
                 <h3 className="card__title text-background-dark text-2xl font-semibold text-center">{title}</h3>
             </header>
             <div className="card__content">
-                <p className="card__text font-semibold text-center">{shortDescription}</p>
+                <p className="card__text text-center">{shortDescription}</p>
             </div>
             <div className="card__button flex justify-center items-end">
                 <button onClick={openModal} className="button flex gap-4 py-2 pl-5 pr-4 border-2 h-fit relative overflow-hidden border-background-dark hover:text-background-light fill-animation-left-to-right before:bg-background-dark transition-all cursor-pointer">

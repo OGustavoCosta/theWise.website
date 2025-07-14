@@ -1,7 +1,14 @@
+import { useState } from "react"
 import Details from "../../components/Details"
 
+interface IQuestion{
+    id: number,
+    title: string,
+    text: string,
+}
+
 function LandingFaQ(){
-    const questions = [
+    const [questions] = useState<IQuestion[]>([
         {
             "id": 1,
             "title": "Qual é a faixa etária atendida pela The Wise?",
@@ -27,8 +34,7 @@ function LandingFaQ(){
             "title": "Os professores têm qualificação específica para ensinar crianças?",
             "text": "Sim. Nossos educadores são formados em áreas como engenharia, tecnologia e pedagogia, além de receberem treinamento contínuo em didática infantil, robótica educacional e metodologias ativas de ensino."
         }
-    ]
-
+    ])
 
     return(
         <section className="section pt-10 pb-15 w-full grid gap-5">
