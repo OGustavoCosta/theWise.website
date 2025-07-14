@@ -29,8 +29,8 @@ function Footer(){
                 </section>
             </div>
             <div className="footer__background bg-[#230070] p-5">
-                <p className="footer__text text-center">© 2025 <strong>The Wise - Robótica Educaional</strong>. Todos os direitos reservados.</p>
-                <p className="footer__text text-center text-sm">Desenvolvido por <a href="https://www.linkedin.com/in/gustavosncosta/" className="text-gray-400">Gustavo Costa</a></p>
+                <p className="footer__text text-center">© 2025 <strong className="">The Wise - Robótica Educacional</strong>. Todos os direitos reservados.</p>
+                <p className="footer__text text-center text-sm">Desenvolvido por <a href="https://www.linkedin.com/in/gustavosncosta/" className="text-highlight-light">Gustavo Costa</a></p>
             </div>
         </footer>
     )
