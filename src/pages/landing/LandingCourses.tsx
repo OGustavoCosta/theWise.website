@@ -101,7 +101,8 @@ function LandingCourses(){
                 className=''
                 modules={[Autoplay]}
                 breakpoints={{
-                    0: { 
+                    0: {
+                        slidesPerView: 1, 
                         spaceBetween: 20,
 
                     },

@@ -24,7 +24,7 @@ function CourseCard({ course, getId, openModal }: CourseCardProps){
     return(
         <article className="card card--course min-h-[420px] bg-background-light text-dark grid py-8 px-5 rounded-2xl gap-5 scale-[0.98] hover:scale-[1] transition-all cursor-default">
             <header className="card__header grid justify-items-center gap-5">
-                <img className="card__banner w-30" src={banner}/>
+                <img className="card__banner w-30" src={banner} alt={`Banner de representação do curso ${title}`}/>
                 <h3 className="card__title text-background-dark text-2xl font-semibold text-center">{title}</h3>
             </header>
             <div className="card__content">
